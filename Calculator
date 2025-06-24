@@ -1,0 +1,26 @@
+def add(n1, n2):
+    return n1 + n2
+
+def subtract(n1, n2):
+    return n1 - n2
+
+def multiply(n1, n2):
+    return n1 * n2
+
+def divide(n1, n2):
+    return n1 / n2
+calculating = True
+operations = {"+": add , "-": subtract, "*": multiply, "/": divide}
+while calculating:
+    n1 = float(input("What is the first number?"))
+    accumulating = True
+    while accumulating:
+        operator = (input("What operation?"))
+        n2 = float(input("What is the second number?"))
+        answer = (operations[operator](n1,n2))
+        print(f"{n1} {operator} {n2} = {answer}")
+        next = input("Would you like to save this number and use it again?")
+        if next == "yes":
+            n1 = answer
+        else:
+            accumulating = False
