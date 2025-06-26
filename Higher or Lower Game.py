@@ -1,5 +1,5 @@
 import random
-import game_data
+import higher_or_lower_data
 
 def get_account():
     account = game_data.data[random.randint(0,len(game_data.data))]
