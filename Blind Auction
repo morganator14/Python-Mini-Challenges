@@ -1,0 +1,21 @@
+print("Welcome to the auction")
+bids = {}
+def auction():
+    key = input("What is your name?")
+    value = int(input("What is your bid?"))
+    bids[key] = value
+is_live = True
+auction()
+while is_live:
+    repeat = input("Is there anyone else that would like to bid?")
+    if repeat == "yes":
+        auction()
+    else:
+        is_live = False
+        highest = 0
+        for key in bids:
+            if bids[key] > highest:
+                highest = bids[key]
+                high_key = key
+
+print(f"The highest bid was {highest} . Congrats {high_key}")
