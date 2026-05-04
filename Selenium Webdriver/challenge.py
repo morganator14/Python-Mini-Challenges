@@ -17,6 +17,6 @@ email = driver.find_element(By.NAME, value='email')
 submit = driver.find_element(By.CLASS_NAME, value='btn')
 
 fname.send_keys('Morgan')
-lname.send_keys('Toronyi')
+lname.send_keys('Morgan')
 email.send_keys('hello@gmail.com')
 submit.click()
