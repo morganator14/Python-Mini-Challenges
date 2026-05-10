@@ -6,10 +6,6 @@ import smtplib
 
 load_dotenv()
 
-load_dotenv()
-print(repr(os.environ.get('EMAIL_ADDRESS')))
-print(repr(os.environ.get('EMAIL_PASSWORD')))
-
 url = 'https://www.amazon.com/dp/B075CYMYK6?psc=1&ref_=cm_sw_r_cp_ud_ct_FM9M699VKHTT47YD50Q6'
 response = requests.get(url, 
     headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36 Edg/147.0.0.0",

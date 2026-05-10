@@ -31,7 +31,6 @@ while True:
         for product in reversed(items):
             try:
                 best_item = driver.find_element(By.ID, value=product)
-                print(best_item)
                 element_class = best_item.get_attribute('class').split()[2]
             except:
                 cookie.click()
